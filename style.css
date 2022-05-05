@@ -72,14 +72,26 @@
     margin: 30px;
 }
 
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.products{
+    height: calc(100vh - 80px);
+}
+
 .camisaslist{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-items: center;
     gap: 50px;
 }
 
 .camisaslist img{
+    margin-top: 120px;
     width: 100%;
     height: auto;
     max-width: 317px;
