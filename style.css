@@ -426,4 +426,171 @@ input[type="password"], input[id="inputs"]{
     .divdiv img{
         width: 100%;   
     }
+}
+
+@media only screen and (max-width: 460px){
+    
+    .logo{
+        width: auto;
+        height: 40px;
     }
+    
+    .lista{
+        width: 100%;
+        gap: 9px;
+    }
+    
+    .navegation{
+        margin-right: 0px;
+    }
+    
+    .lista a{
+        font-size: 10px;
+    }
+    
+    .divdiv img{
+        width: 100%;   
+    }
+    
+
+}
+
+@media only screen and (max-width: 375px){
+    
+    .logo{
+        width: auto;
+        height: 40px;
+    }
+    
+    .lista{
+        width: 100%;
+        gap: 7px;
+    }
+    
+    .navegation{
+        margin-right: 0px;
+    }
+    
+    .lista a{
+        font-size: 7px;
+    }
+    
+    .divdiv img{
+        width: 100%;   
+    }
+
+    .pricelist{
+        font-size: 13px;
+    }
+    
+    .pricelist2{
+        font-size: 13px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 414px){
+    
+    .logo{
+        width: auto;
+        height: 40px;
+    }
+    
+    .lista{
+        width: 100%;
+        gap: 7px;
+    }
+    
+    .navegation{
+        margin-right: 0px;
+    }
+    
+    .lista a{
+        font-size: 7px;
+    }
+    
+    .divdiv img{
+        width: 100%;   
+    }
+
+    .pricelist{
+        font-size: 13px;
+    }
+    
+    .pricelist2{
+        font-size: 13px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 360px){
+    
+    .logo{
+        width: auto;
+        height: 40px;
+    }
+    
+    .lista{
+        width: 100%;
+        gap: 6px;
+    }
+    
+    .navegation{
+        margin-right: 0px;
+    }
+    
+    .lista a{
+        font-size: 7px;
+    }
+    
+    .divdiv img{
+        width: 100%;   
+    }
+
+    .pricelist{
+        font-size: 13px;
+    }
+    
+    .pricelist2{
+        font-size: 13px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 280px){
+    
+    .logo{
+        width: auto;
+        height: 40px;
+    }
+    
+    .lista{
+        width: 100%;
+        gap: 6px;
+    }
+    
+    .navegation{
+        margin-right: 0px;
+    }
+    
+    .lista a{
+        font-size: 4px;
+    }
+    
+    .divdiv img{
+        width: 100%;   
+    }
+
+    .pricelist{
+        font-size: 13px;
+    }
+    
+    .pricelist2{
+        font-size: 13px;
+    }
+
+   
+}
