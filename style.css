@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;  
 }
 
@@ -16,7 +17,7 @@
 #search{
     background-color: #252525;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 #search::placeholder{
@@ -97,6 +98,22 @@
     max-width: 317px;
 }
 
+.pricelist{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 50px;
+    font-weight: bold;
+}
+
+.pricelist2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 50px;
+    margin-top: 5PX;
+    font-weight: bold;
+}
 .titulo{
     margin: 28px;
 }
@@ -143,7 +160,115 @@ background-color: #000;
     gap: 10px;
 }
 
-@media only screen and (max-width: 695px) { /* (1197px to 992px) */
+                       /* PAGINA LOGIN */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 10px;
+  }
+
+input[type="password"], input[id="inputs"]{
+    background-color: white;
+    height: 35px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+    color: #c4c4c4;
+    box-shadow: 1px 1px 1px 1px #c4c4c4
+  }
+  
+  input[type="password"]::placeholder, input[type="text"]::placeholder{
+    color: rgb(165, 164, 164);
+  }
+  
+  input[type="password"]:focus, input[type="text"]:focus{
+    outline: 0;
+    border: 1px solid var(--border-primary);
+  }
+  
+  input[type="submit"]{
+    width: 320px;
+    margin-top: 10px;
+    height: 40px;
+    border: 0;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }  
+
+  .infobox{
+      font-size: 15px;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .infobox p {
+    user-select: none;
+  }
+  
+  .infobox p a{
+    font-weight: bold;
+    user-select: none;
+    color: #000;
+  }
+  
+  .get-app-panel{
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .app-buttons{
+    margin-top: 16px;
+  }
+  
+  .app-buttons img{
+    height: 40px;
+    padding: 0 2px;
+} 
+
+.checkbox1{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 10px;
+}
+
+.checkbox1 p{
+    margin-left: 60px;
+}
+
+.spam{
+    font-size: 10px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+                  /* FIM PAGINA LOGIN */
+
+
+                  /* PAGINA DE SIGN-UP */
+.radio3{
+    margin: 5px;
+}
+
+                  /* FIM DA PAGINA DE SIGN-UP */
+
+                  /* RESPONSIVIDADE */
+
+@media only screen and (max-width: 696px) { /* (1197px to 992px) */
     .logo{
         width: auto;
         height: 40px;
@@ -192,3 +317,113 @@ background-color: #000;
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 556px) {
+
+    #search::placeholder{
+        color: #000;
+    }
+
+    #search{
+        background-color: #000;
+        padding: 10px;
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 857px){
+
+    #search::placeholder{
+        color: #000;
+    }
+
+    #search{
+        background-color: #000;
+        padding: 10px;
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 758px)  {
+
+    .logo{
+        width: auto;
+        height: 40px;
+    }
+    #search{
+        width: 100%;
+        height: 30px;
+    }
+    .lista{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .navegation{
+        margin-right: 0px;
+    }
+
+    .lista a{
+        font-size: 15px;
+    }
+
+    .divdiv img{
+        width: 100%;   
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+
+.logo{
+    width: auto;
+    height: 40px;
+}
+#search{
+    width: 100%;
+    height: 30px;
+}
+.lista{
+    width: 100%;
+    gap: 10px;
+}
+
+.navegation{
+    margin-right: 0px;
+}
+
+.lista a{
+    font-size: 13px;
+}
+
+.divdiv img{
+    width: 100%;   
+}
+}
+
+@media only screen and (max-width: 543px)  {
+
+    .logo{
+        width: auto;
+        height: 40px;
+    }
+    #search{
+        width: 100%;
+        height: 30px;
+    }
+    .lista{
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .navegation{
+        margin-right: 0px;
+    }
+    
+    .lista a{
+        font-size: 10px;
+    }
+    
+    .divdiv img{
+        width: 100%;   
+    }
+    }
