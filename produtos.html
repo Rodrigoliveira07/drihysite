@@ -23,7 +23,7 @@
                    <a href="sobre.html">SOBRE</a>
                </li>
                <li>
-                    <a href="produtos.html">PRODUTOS</a>
+                    <a href="#">PRODUTOS</a>
                </li> 
                <li>
                 <a href="contato.html">CONTATO</a>
@@ -32,33 +32,55 @@
                     <a href="login.html">ENTRAR/CADASTRAR</a>
                 </li>
             </ul>
-            <a href="carrinho.html">
+            <a href="">
                 <img src="images/Design sem nome (3).png" alt="carrinho">
             </a>  
         </nav>
         </div>
     </header>
-    <main>
-        <section>
-          <div class="divdiv">
-              <img src="images/capa main.png" alt="capadomain">
-          </div>
-        </section>
-        <section class="products">
-            <h1 class="titulo">LANÇAMENTOS</h1>
-            <ul class="camisaslist">
+    <main class="productspage">
+    <div class="filtros">
+        <div class="titlefilters">
+            <h3>FILTROS</h3>  
+        </div> 
+        <div class="colors">
+            <p>COR</p>
+            <button class="rosabutton"></button>
+            <button class="pretobutton"></button>
+        </div>
+        <div class="sizebuttons">
+            <p>TAMANHO</p>
+            <button>PP</button>
+            <button>P</button>
+            <button>M</button>            
+            <button>G</button>
+            <button>GG</button>
+        </div>
+        <div class="priceeee">
+            <p>PREÇO</p><br>
+            <input type="checkbox" name="theradio" id="checkbox1" class="checkbox"> <label for="checkbox1">ATE R$ 100,00</label><br>
+            <input type="checkbox" name="theradio" id="checkbox1" class="checkbox"> <label for="checkbox1">ATE R$ 350,00</label><br>
+            <input type="checkbox" name="theradio" id="checkbox1" class="checkbox"> <label for="checkbox1">ACIMA DE R$ 350,00</label>  
+        </div>
+        </div>
+        <section class="catalogo">
+            <div class="ordenarr">
+                <h4 class="order">ORDERNAR POR</h4>  <h4 class="orderm">LANCAMENTOS</h4>
+                <img class="setinha" src="images/seta.png" alt="" width="14px" height="12px"> 
+            </div>
+            <ul class="twoproducts">
                 <li>
                     <a href="">
                         <img src="images/camisapretadrihy.jpeg" alt="camisapretadrihy"> 
                     </a>
                 </li>
                 <li >
-                    <a href="">
+                    <a href="camiseta.html">
                         <img src="images/camisarosadrihy.jpeg" alt="camisarosadrihy">
                     </a>
                 </li>
             </ul>
-            <ul class="pricelist">
+            <ul class="pricelistproducts">
                 <li>
                     <p>Camiseta Drihy Preta</p>
                 </li>
@@ -66,7 +88,7 @@
                     <p>Camiseta Drihy Rosa</p>
                 </li>
             </ul>
-            <ul class="pricelist2">
+            <ul class="pricelistproducts2">
                 <li>
                     <p>R$ 60,00</p>
                 </li>

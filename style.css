@@ -42,7 +42,7 @@
 .navegation{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 60px;
     margin-right: 28px;
 }
 
@@ -182,8 +182,12 @@ input[type="password"], input[id="inputs"]{
     box-shadow: 1px 1px 1px 1px #c4c4c4
   }
   
+  input[type="date"]{
+      color: #000;
+  }
+
   input[type="password"]::placeholder, input[type="text"]::placeholder{
-    color: rgb(165, 164, 164);
+    color: #000;
   }
   
   input[type="password"]:focus, input[type="text"]:focus{
@@ -210,6 +214,7 @@ input[type="password"], input[id="inputs"]{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
   }
 
   
@@ -263,8 +268,555 @@ input[type="password"], input[id="inputs"]{
 .radio3{
     margin: 5px;
 }
-
                   /* FIM DA PAGINA DE SIGN-UP */
+
+                  /* PAGINA DE CONTATO */
+
+.maincontacts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+                  
+.perguntas{
+    display: flex;
+    width: 1000px;
+    height: 90vh;
+    margin: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px 2px 5px 5px #c4c4c4;
+    font-weight: bold;
+
+}
+
+.perguntas p{
+    margin-bottom: 30px;
+}
+
+.contactbox{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 1000px;
+    height: 300px;
+    margin: 40px;
+    box-shadow: 2px 2px 5px 5px #c4c4c4;
+}
+
+.contactbox p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.titleperguntas{
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    border-bottom: 4px solid #000;
+    
+}
+
+.titlefrequentes{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.perguntas p{
+    margin-bottom: 90px;
+    color: gray;
+}
+
+.perguntas h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.perguntas h2{
+    margin-top: 30px;
+}
+
+.mail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 97px;
+}
+
+.insta{
+    margin-top: 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wats{
+    margin-top: 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+.productspage{
+    display: flex;
+    flex-direction: row;
+}
+
+.filtros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+    margin: 40px;
+    gap: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    
+}
+
+
+.colors button{
+    width: 20px;
+    height: 20px;
+    border: 1px solid none;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.colors{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.priceeee{
+    width: 300px;
+    height: 170px;
+}
+
+.sizebuttons button{
+    background-color: white;
+    width: 30px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 3px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+    
+}
+
+.sizebuttons{
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.rosabutton{
+    background-color: #AD1C93;
+}
+
+.pretobutton{
+    background-color: #000;
+}
+
+
+.twoproducts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 170px;
+    margin-right: 200px;
+
+}
+
+.order{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 80px;
+    gap: 150px;
+
+}
+
+
+
+.twoproducts img{ 
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    max-width: 317px;
+}
+
+.catalogo{
+    margin-left: 500px;
+    justify-content: center;
+    height: calc(100vh - 80px); 
+}
+
+.ordenarr{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+
+}
+
+.setinha{
+    margin-top: 85px;
+}
+
+.orderm{
+    margin-top: 81px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #c4c4c4;
+}
+
+.pricelistproducts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 180px;
+    font-weight: bold;
+    margin-right: 200px;
+}
+
+.pricelistproducts2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 180px;
+    margin-top: 5PX;
+    font-weight: bold;
+    margin-right: 200px;
+}
+
+.priceeee{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.titlefilters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #000;
+}
+
+.camisetaicon{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 80px); 
+}
+
+.containercamiseta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.camisetarosali{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 160px;
+    margin-bottom: 320px;
+}
+
+.maincarrinho{
+    height: calc(100vh - 80px); 
+}
+
+.listacarrinho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px;
+}
+
+.carrinholi{
+    display: flex;
+    
+}
+
+.productslistacar{
+    display: flex;
+    flex-direction: row;
+}
+
+.carrinholi img{
+    margin-left: 25px;
+}
+
+.carrinholi h5{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.diminuir{
+    width: 40px;
+    height: 30px;
+    margin-left: 415px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+
+}
+
+.number1{
+    width: 30px;
+    height: 30px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+
+}
+
+.somar{
+    width: 40px;
+    height: 30px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+
+}
+
+.one p{
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+.soma p{
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+.minus p{
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+.pricecar{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 630px;
+    
+    display: flex;
+}
+
+.vouchers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.value{
+    margin-right: 50px;
+}
+
+.itensdocarrinho{
+    margin: 60px;
+
+}
+
+.voucherscontainer{
+    margin: 100px;
+}
+
+.totalcar{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 260px;
+    background-color: #F7F7F7;
+}
+
+.submitcar input{
+    margin-top: 65px;
+}
+
+.totalcar h5{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.cupomtext{
+    width: 200px;
+    height: 40px;
+    background-color: #FFFF;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
+
+.fretetitle{
+    width: 200px;
+    height: 40px;
+    background-color: #ffff;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
+
+input[id="fretebutton"]{
+    width: 200px;
+    height: 40px;
+}
+
+input[id="aplicarbutton"]{
+    width: 200px;
+    height: 40px;
+}
+
+.containerpagamento{
+    display: flex;
+    flex-direction: row;
+    margin: 60px;
+    height: 800px;
+}
+
+.containerproductss{
+    display: flex;
+    flex-direction: row;
+}
+
+.licamiseta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+
+}
+
+.licamiseta h5{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 60px;
+
+ 
+}
+
+.titleeeee{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pagamentcontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.containerpro{
+    display: flex;
+    flex-direction: column;
+}
+
+.divcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    width: 600px;
+    height: 100px;
+    background-color: #F7F7F7;
+}
+
+.divcard2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 200px;
+    width: 600px;
+    height: 100px;
+    background-color: #F7F7F7;
+}
+
+.divcard3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 200px;
+    width: 600px;
+    height: 100px;
+    background-color: #F7F7F7;
+}
+
+.totalcar2{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 340px;
+    background-color: #F7F7F7;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.totalcar2 h5{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.logoconfirmation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmationpage{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.coluna1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pedidonumber{
+    margin-left: 60px;
+    text-align: center;
+}
+                  /* FIM DA PAGINA DE CONTATO */
 
                   /* RESPONSIVIDADE */
 

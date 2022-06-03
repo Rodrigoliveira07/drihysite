@@ -23,7 +23,7 @@
                    <a href="sobre.html">SOBRE</a>
                </li>
                <li>
-                    <a href="produtos.html">PRODUTOS</a>
+                    <a href="#">PRODUTOS</a>
                </li> 
                <li>
                 <a href="contato.html">CONTATO</a>
@@ -32,49 +32,74 @@
                     <a href="login.html">ENTRAR/CADASTRAR</a>
                 </li>
             </ul>
-            <a href="carrinho.html">
+            <a href="">
                 <img src="images/Design sem nome (3).png" alt="carrinho">
             </a>  
         </nav>
         </div>
     </header>
-    <main>
-        <section>
-          <div class="divdiv">
-              <img src="images/capa main.png" alt="capadomain">
-          </div>
-        </section>
-        <section class="products">
-            <h1 class="titulo">LANÇAMENTOS</h1>
-            <ul class="camisaslist">
-                <li>
-                    <a href="">
-                        <img src="images/camisapretadrihy.jpeg" alt="camisapretadrihy"> 
-                    </a>
-                </li>
-                <li >
-                    <a href="">
-                        <img src="images/camisarosadrihy.jpeg" alt="camisarosadrihy">
-                    </a>
-                </li>
-            </ul>
-            <ul class="pricelist">
-                <li>
-                    <p>Camiseta Drihy Preta</p>
-                </li>
-                <li>
-                    <p>Camiseta Drihy Rosa</p>
-                </li>
-            </ul>
-            <ul class="pricelist2">
-                <li>
-                    <p>R$ 60,00</p>
-                </li>
-                <li>
-                    <p>R$ 60,00</p>
-                </li>
-            </ul>
-        </section>
+    <main class="maincarrinho">
+    <div class="containercarrinho">
+    <div class="itensdocarrinho">
+       <ul class="listacarrinho">
+           <li>
+            <h2>PRODUTOS</h2>
+           </li>
+           <li>
+            <h2>QUANTIDADE</h2>
+           </li>
+           <li class="value">
+            <h2>VALOR</h2>
+           </li>
+       </ul>
+       <ul class="productslistacar">
+           <li class="carrinholi">
+               <img src="images/camisarosadrihy.jpeg" alt="" width="200px" height="200px"> <h5>CAMISETA DRIHY ROSA <br><br>COR:ROSA <br> TAMANHO:G</h5>
+           </li>
+           <li class="diminuir">
+            <div class="minus">
+                <p>-</p>
+            </div>
+           </li>
+           <li class="number1">
+            <div class="one">
+                <p>1</p>
+            </div>
+           </li>
+           <li class="somar">
+            <div class="soma">
+                <p>+</p>
+            </div>
+           </li>
+           <li>
+               <div class="pricecar">
+                   <h3>R$ 60,00</h3><div><img src="images/lixeira.png" alt="" width="25px" height="20px"></div>
+               </div>
+           </li>
+       </ul>
+    </div>
+    <div class="voucherscontainer">
+       <div class="vouchers">
+       <div class="cupom">
+        <h3>CUPOM</h3>
+           <input class="cupomtext" type="text" placeholder="Cupom"><input id="aplicarbutton" type="submit" value="APLICAR">
+       </div>
+       <div class="fretecalculator">
+        <h3>CALCULAR FRETE</h3>
+           <input class="fretetitle" type="text" placeholder="00000-000"><input id="fretebutton" type="submit" value="CALCULAR">
+       </div>
+        <div class="totalcar">
+            <h5>VALOR: R$ 60,00
+            <h5>FRETE: A CALCULAR
+            <h5>DESCONTO:R$ 0,00 
+            <h5>TOTAL R$ 60,00</h5>
+            <a class="submitcar" href="pagamento.html">
+                <input type="submit" value="CONFIRMAR">   
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
     </main>
     <footer>
         <div class="conatainerfooter">
@@ -97,7 +122,7 @@
                 </a>
             </li>
         </ul>
-        </div>
+    </div>
         <div class="linha"></div>
         <div class="copyright">
             <p>&copy; 2022 DRIHY</p>
