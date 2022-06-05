@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="container">
-        <a href="index.html ">
+        <a class="responsividadelogo" href="index.html ">
             <img class="logo" src="images/logodrihypreta.jpeg" alt="logodrihy">
         </a>
         <nav class="navegation">
@@ -32,9 +32,15 @@
                     <a href="login.html">ENTRAR/CADASTRAR</a>
                 </li>
             </ul>
-            <a href="">
+            <a class="carrinhofuncao" href="carrinho.html">
                 <img src="images/Design sem nome (3).png" alt="carrinho">
-            </a>  
+            </a>
+            <button class="hamburguer">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <script type="text/javascript" src="menu.js"></script>
         </nav>
         </div>
     </header>
@@ -44,15 +50,31 @@
             <div class="camisetarosali">
                 <img src="images/camisarosadrihy.jpeg" alt="" width="400px" height="400px">
             </div>
-            <div>
-                <h2>Camisa drihy</h2><br>
+            <div class="priceproduct">
+                <h2>CAMISA DRIHY ROSA</h2><br>
                 <h5>R$ 60,00</h5>
-                <h6>em ate 60x</h6><br>
+                <h6>EM ATE 10x SEM JUROS</h6><br>
             </div>
-            <div>
+            <div class="tamanhoswid">
+                <H2>TAMANHO</H2>
+                <div class="divss">
+                    <div class="div11"><p>PP</p></div>
+                    <div class="div22"><p>P</p></div>
+                    <div class="div33"><p>M</p></div>
+                    <div class="div44"><p>G</p></div>
+                    <div class="div55"><p>GG</p></div>
+                    <div class="div66"><p>XG</p></div>
+                </div>
+                <div class="inputsdivs">
+                    <a href="carrinho.html"><input type="submit" value="COMPRAR" /></a>
+                    <a class="caminhocarrinho" href="#"><input type="submit" value="ADICIONAR AO CARRINHO" /></a>
+                </div>
+                <div class="fretecalculator">
+                    <h3>CALCULAR FRETE</h3>
+                    <input class="fretetitle" type="text" placeholder="00000-000"><input id="fretebutton" type="submit" value="CALCULAR">
+                </div>
             </div>
         </div>
-
     </main>
     <footer>
         <div class="conatainerfooter">

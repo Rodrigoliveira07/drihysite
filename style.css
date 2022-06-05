@@ -46,6 +46,11 @@
     margin-right: 28px;
 }
 
+.carrinhofuncao img{
+    width: 100%;
+    height: 30px;
+}
+
 .lista{
     display: flex;
     align-items: center;
@@ -282,7 +287,7 @@ input[type="password"], input[id="inputs"]{
 .perguntas{
     display: flex;
     width: 1000px;
-    height: 90vh;
+    height: Calc(120vh - 80px);;
     margin: 30px;
     align-items: center;
     justify-content: space-between;
@@ -314,7 +319,7 @@ input[type="password"], input[id="inputs"]{
 
 .titleperguntas{
     width: 70%;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
     background: none;
     border: none;
@@ -328,7 +333,7 @@ input[type="password"], input[id="inputs"]{
 }
 
 .perguntas p{
-    margin-bottom: 90px;
+    margin-bottom: 80px;
     color: gray;
 }
 
@@ -372,6 +377,90 @@ input[type="password"], input[id="inputs"]{
     flex-direction: row;
 }
 
+.priceproduct{
+    display: flex;
+    margin-top: 300px;
+    flex-direction: column;
+}
+
+.tamanhoswid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.divss{
+    width: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-items: center;
+    gap: 10px;
+    margin-top: 5PX;
+    font-weight: bold;
+}
+
+.inputsdivs input{
+    width: 100px;
+}
+
+.caminhocarrinho input{
+    width: 150px;
+    font-size: 10px;
+}
+
+.inputsdivs{
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.divss p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.div11{
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
+
+.div22{
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
+
+.div33{
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
+
+.div44{
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
+
+.div55{
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
+
+.div66{
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+}
 .filtros{
     display: flex;
     flex-direction: column;
@@ -962,6 +1051,11 @@ input[id="aplicarbutton"]{
     margin-top: 50px;
 }
 
+.tamanhoswid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 
@@ -969,42 +1063,66 @@ input[id="aplicarbutton"]{
 
                   /* RESPONSIVIDADE */
 
-@media only screen and (max-width: 696px) { /* (1197px to 992px) */
-    .logo{
-        width: auto;
-        height: 40px;
+                  /* RESPONSIVIDADE HEADER */
+@media only screen and (max-width: 1366px){
+ 
+    .hamburguer{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        order: 1;
+    }
+    
+    .hamburguer .line{
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: #FFF;
+      margin-block: 10px;
+      border-radius: 4px;
+      transition: transform .5s, opacity .25s 
+    }
+    
+    .hamburguer.active .line:nth-child(1){
+        transform: translateY(13px); rotate: (45deg);
+    }
+    .hamburguer.active .line:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .line:nth-child(3){
+        transform: translateY(-13px); rotate: (-45deg);
     }
     #search{
-        width: 100%;
-        height: 30px;
+        display: none;
+        width: 0;
+        height: 0;
+        background-color: none;
+        padding: 0;
     }
-    .lista{
-        width: 100%;
-        gap: 10px;
+
+    .lista {
+        display: none;
+    }
+
+
+    .logo{
+        display: flex;
+        align-self: center;
+    }
+
+    .carrinhofuncao{
+        margin-top: 10px;
+    }
+
+    .carrinhofuncao img{
+        display: none;
+       width: 60px;
+       margin-bottom: 10px;
     }
 
     .navegation{
-        margin-right: 0px;
-    }
-
-    .lista a{
-        font-size: 11px;
-    }
-
-    .divdiv img{
-        width: 100%;   
-    }
-}
-
-@media only screen and (max-width: 991px) { /* (991px to 601px) */
-    /* HEADER */
-    #search{
-        width: 100%;
-        height: 30px;
-    }
-
-    .lista{
-        width: 100%;
+        display: flex;
     }
 
     .divdiv img{
@@ -1012,286 +1130,112 @@ input[id="aplicarbutton"]{
     }
 }
 
-@media only screen and (max-width: 1280px) {
+            /* FIM RESPONSIVIDADE HEADER */
 
-    .divdiv img{
+
+            /* RESPOSIVIDADE PAGINA SOBRE */
+@media only screen and (max-width: 1369px){
+    .about img{
         width: 100%;
+        height: auto;
+    }
+
+    .about{
+        height: calc(100vh - 80px);
+    }
+
+@media only screen and (max-width: 900px){
+    .about img{
+        width: 100%;
+        height: 650px;
+    }
+
+    .about{
+        height: calc(80vh - 80px);
     }
 }
 
-@media only screen and (max-width: 556px) {
-
-    #search::placeholder{
-        color: #000;
+@media only screen and (max-width: 669px){
+    .about img{
+        width: 100%;
+        height: 350px;
+        margin-top: 100px;
     }
 
-    #search{
-        background-color: #000;
-        padding: 10px;
-        border-radius: 0px;
+    .about{
+        height: calc(80vh - 80px);
     }
 }
 
-@media only screen and (max-width: 857px){
+        /* FIM RESPOSIVIDADE PAGINA SOBRE */
 
-    #search::placeholder{
-        color: #000;
-    }
-
-    #search{
-        background-color: #000;
-        padding: 10px;
-        border-radius: 0px;
+        /* RESPOSIVIDADE PAGINA PRODUTOS */
+ @media only screen and (max-width: 1650px){
+    .twoproducts img{
+        width: 1000px;
     }
 }
 
-@media only screen and (max-width: 758px)  {
+        /* RESPOSIVIDADE PAGINA CONTATO */
+@media only screen and (max-width: 1020px){
+    .perguntas{
+        width: 900px;
+    }
+      
+    .contactbox{
+        width: 900px;
+    }
+}
 
-    .logo{
-        width: auto;
-        height: 40px;
+@media only screen and (max-width: 920px){
+    .perguntas{
+        width: 800px;
     }
-    #search{
-        width: 100%;
-        height: 30px;
+      
+    .contactbox{
+        width: 800px;
     }
-    .lista{
-        width: 100%;
-        gap: 10px;
-    }
+}
 
-    .navegation{
-        margin-right: 0px;
+@media only screen and (max-width: 820px){
+    .perguntas{
+        width: 600px;
     }
+      
+    .contactbox{
+        width: 600px;
+    }
+}
 
-    .lista a{
+@media only screen and (max-width: 620px){
+    .perguntas{
+        width: 450px;
         font-size: 15px;
     }
-
-    .divdiv img{
-        width: 100%;   
+      
+    .contactbox{
+        width: 450px;
+        gap: 20px;
     }
-}
 
-@media only screen and (max-width: 600px)  {
-
-.logo{
-    width: auto;
-    height: 40px;
-}
-#search{
-    width: 100%;
-    height: 30px;
-}
-.lista{
-    width: 100%;
-    gap: 10px;
-}
-
-.navegation{
-    margin-right: 0px;
-}
-
-.lista a{
-    font-size: 13px;
-}
-
-.divdiv img{
-    width: 100%;   
-}
-}
-
-@media only screen and (max-width: 543px)  {
-
-    .logo{
-        width: auto;
-        height: 40px;
-    }
-    #search{
-        width: 100%;
+    .contactbox img{
+        width: 30px;
         height: 30px;
     }
-    .lista{
-        width: 100%;
-        gap: 10px;
-    }
-    
-    .navegation{
-        margin-right: 0px;
-    }
-    
-    .lista a{
-        font-size: 10px;
-    }
-    
-    .divdiv img{
-        width: 100%;   
-    }
-}
 
-@media only screen and (max-width: 460px){
-    
-    .logo{
-        width: auto;
-        height: 40px;
+    .contactbox p{
+        font-size: 12px;
     }
-    
-    .lista{
-        width: 100%;
-        gap: 9px;
-    }
-    
-    .navegation{
-        margin-right: 0px;
-    }
-    
-    .lista a{
-        font-size: 10px;
-    }
-    
-    .divdiv img{
-        width: 100%;   
-    }
-    
 
 }
 
-@media only screen and (max-width: 375px){
-    
-    .logo{
-        width: auto;
-        height: 40px;
-    }
-    
-    .lista{
-        width: 100%;
-        gap: 7px;
-    }
-    
-    .navegation{
-        margin-right: 0px;
-    }
-    
-    .lista a{
-        font-size: 7px;
-    }
-    
-    .divdiv img{
-        width: 100%;   
-    }
+    /* FIM RESPOSIVIDADE PAGINA CONTATO */
 
-    .pricelist{
-        font-size: 13px;
-    }
-    
-    .pricelist2{
-        font-size: 13px;
-    }
-
-   
+     /* RESPOSIVIDADE PAGINA CAMISETA */
+@media only screen and (max-width: 1400px){
+        .fretetitle input{
+            width: 20px;
+            height: 20px;
+        }
 }
-
-@media only screen and (max-width: 414px){
-    
-    .logo{
-        width: auto;
-        height: 40px;
-    }
-    
-    .lista{
-        width: 100%;
-        gap: 7px;
-    }
-    
-    .navegation{
-        margin-right: 0px;
-    }
-    
-    .lista a{
-        font-size: 7px;
-    }
-    
-    .divdiv img{
-        width: 100%;   
-    }
-
-    .pricelist{
-        font-size: 13px;
-    }
-    
-    .pricelist2{
-        font-size: 13px;
-    }
-
-   
-}
-
-@media only screen and (max-width: 360px){
-    
-    .logo{
-        width: auto;
-        height: 40px;
-    }
-    
-    .lista{
-        width: 100%;
-        gap: 6px;
-    }
-    
-    .navegation{
-        margin-right: 0px;
-    }
-    
-    .lista a{
-        font-size: 7px;
-    }
-    
-    .divdiv img{
-        width: 100%;   
-    }
-
-    .pricelist{
-        font-size: 13px;
-    }
-    
-    .pricelist2{
-        font-size: 13px;
-    }
-
-   
-}
-
-@media only screen and (max-width: 280px){
-    
-    .logo{
-        width: auto;
-        height: 40px;
-    }
-    
-    .lista{
-        width: 100%;
-        gap: 6px;
-    }
-    
-    .navegation{
-        margin-right: 0px;
-    }
-    
-    .lista a{
-        font-size: 4px;
-    }
-    
-    .divdiv img{
-        width: 100%;   
-    }
-
-    .pricelist{
-        font-size: 13px;
-    }
-    
-    .pricelist2{
-        font-size: 13px;
-    }
-
-   
 }
