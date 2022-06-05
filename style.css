@@ -46,27 +46,6 @@
     margin-right: 28px;
 }
 
-.carrinhofuncao img{
-    width: 100%;
-    height: 30px;
-}
-
-.lista{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.lista a{
-    color: gray;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.lista a:hover{
-    color: #FFFF;
-}
-
 .divdiv{
     display: flex;
     justify-content: center;
@@ -831,7 +810,7 @@ input[id="aplicarbutton"]{
     flex-direction: column;
 }
 
-.divcard{
+.divcard {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1057,42 +1036,79 @@ input[id="aplicarbutton"]{
     gap: 10px;
 }
 
-
+.navdiv a {
+    color: gray;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .navdiv a:hover {
+      color: #fff;
+  }
+  
+  .carrinhofuncao img{
+      width: 100%;
+      height: 30px;
+      
+      
+  }
+  
+  .nav-list{
+      font-size: 14px;
+      margin-right: 100px;
+      margin-left: 50px;
+  
+  }
+  
+  .carrinhofuncao{
+      margin-left: 20px;
+  }
+  
+  .navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    height: 8vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  .carrinhoresponsive{
+      font-size: 0;
+  }
+  
 
                   /* FIM DA PAGINA DE CONTATO */
 
                   /* RESPONSIVIDADE */
 
                   /* RESPONSIVIDADE HEADER */
+
 @media only screen and (max-width: 1366px){
- 
-    .hamburguer{
-        background-color: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        order: 1;
-    }
-    
-    .hamburguer .line{
-      display: block;
-      width: 40px;
-      height: 3px;
-      background-color: #FFF;
-      margin-block: 10px;
-      border-radius: 4px;
-      transition: transform .5s, opacity .25s 
-    }
-    
-    .hamburguer.active .line:nth-child(1){
-        transform: translateY(13px); rotate: (45deg);
-    }
-    .hamburguer.active .line:nth-child(2){
-        opacity: 0;
-    }
-    .hamburguer.active .line:nth-child(3){
-        transform: translateY(-13px); rotate: (-45deg);
-    }
+
+
     #search{
         display: none;
         width: 0;
@@ -1100,11 +1116,6 @@ input[id="aplicarbutton"]{
         background-color: none;
         padding: 0;
     }
-
-    .lista {
-        display: none;
-    }
-
 
     .logo{
         display: flex;
@@ -1116,8 +1127,7 @@ input[id="aplicarbutton"]{
     }
 
     .carrinhofuncao img{
-        display: none;
-       width: 60px;
+       display: none;
        margin-bottom: 10px;
     }
 
@@ -1128,7 +1138,77 @@ input[id="aplicarbutton"]{
     .divdiv img{
         width: 100%;
     }
-}
+
+    body {
+        overflow-x: hidden;
+      }
+    
+      .carrinhofuncao{
+          display: none;
+      }
+    
+      
+      .carrinhoresponsive{
+        font-size: 14px;
+      }
+    
+      #search{
+        display: none;
+        width: 0;
+        height: 0;
+        background-color: none;
+        padding: 0;
+    }
+    
+      .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        margin-right: 0px;
+      }
+      .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+      }
+      .mobile-menu {
+        display: block;
+      }
+    }
+    
+    .nav-list.active {
+      transform: translateX(0);
+    }
+    
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .mobile-menu.active .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+      opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
 
             /* FIM RESPONSIVIDADE HEADER */
 
@@ -1147,11 +1227,17 @@ input[id="aplicarbutton"]{
 @media only screen and (max-width: 900px){
     .about img{
         width: 100%;
-        height: 650px;
+        height: 620px;
     }
 
     .about{
         height: calc(80vh - 80px);
+    }
+    
+    .logofooter{
+        width: 100px;
+        height: 70px;
+        margin-top: 40px;
     }
 }
 
@@ -1239,3 +1325,6 @@ input[id="aplicarbutton"]{
         }
 }
 }
+
+
+
