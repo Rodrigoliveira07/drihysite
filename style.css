@@ -623,85 +623,51 @@ input[type="password"], input[id="inputs"]{
 .listacarrinho{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 60px;
 }
 
 .carrinholi{
-    display: flex;
+    text-align: center;
     
 }
 
 .productslistacar{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding-right: 40px;
+}
+
+.productslistacar button{
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
 }
 
 .carrinholi img{
-    margin-left: 25px;
+    margin-left: 5px;
 }
 
 .carrinholi h5{
     margin-top: 50px;
-    margin-left: 30px;
-}
-
-.diminuir{
-    width: 40px;
-    height: 30px;
-    margin-left: 415px;
-    margin-top: 50px;
-    box-shadow: 1px 1px 1px 1px #c4c4c4;
-
-}
-
-.number1{
-    width: 30px;
-    height: 30px;
-    margin-top: 50px;
-    box-shadow: 1px 1px 1px 1px #c4c4c4;
-
-}
-
-.somar{
-    width: 40px;
-    height: 30px;
-    margin-top: 50px;
-    box-shadow: 1px 1px 1px 1px #c4c4c4;
-
-}
-
-.one p{
-    margin-top: 5px;
-    text-align: center;
-
-}
-
-.soma p{
-    margin-top: 5px;
-    text-align: center;
-
-}
-
-.minus p{
-    margin-top: 5px;
-    text-align: center;
-
+    margin-left: 0px;
 }
 
 .pricecar{
     font-weight: bold;
     margin-top: 50px;
-    margin-left: 630px;
-    
-    display: flex;
+
 }
 
 .vouchers{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .value{
@@ -709,6 +675,7 @@ input[type="password"], input[id="inputs"]{
 }
 
 .itensdocarrinho{
+    justify-content: space-between;
     margin: 60px;
 
 }
@@ -1281,7 +1248,7 @@ input[id="aplicarbutton"]{
     .contactbox{
         width: 800px;
     }
-}
+
 
 @media only screen and (max-width: 820px){
     .perguntas{
@@ -1313,7 +1280,12 @@ input[id="aplicarbutton"]{
         font-size: 12px;
     }
 
+    .pricelist{
+        text-align: center;
+    }
+
 }
+
 
     /* FIM RESPOSIVIDADE PAGINA CONTATO */
 
@@ -1324,4 +1296,151 @@ input[id="aplicarbutton"]{
             height: 20px;
         }
 }
+}
+}
+
+@media only screen and (max-width: 999px){
+    .maincarrinho{
+        height: calc(100vh - 80px); 
+    }
+    
+    .listacarrinho {
+        margin: 10px;
+        justify-content: space-around;
+        
+    }
+    
+    .carrinholi{
+        display: flex;
+        
+    }
+    
+    .productslistacar{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .carrinholi img{
+        margin-right: 75px;
+    }
+    
+    .carrinholi h5{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    
+    .diminuir{
+        width: 40px;
+        height: 30px;
+        margin-left: 460px;
+        margin-top: 50px;
+        box-shadow: 1px 1px 1px 1px #c4c4c4;
+    
+    }
+    
+    .number1{
+        width: 30px;
+        height: 30px;
+        margin-top: 50px;
+        box-shadow: 1px 1px 1px 1px #c4c4c4;
+    
+    }
+    
+    .somar{
+        width: 40px;
+        height: 30px;
+        margin-top: 50px;
+        box-shadow: 1px 1px 1px 1px #c4c4c4;
+    
+    }
+    
+    .totalcar{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .pricecar{
+        font-weight: bold;
+        margin-top: 50px;
+        margin-left: 930px;
+        
+        display: flex;
+    }
+    
+    .vouchers{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .value{
+        margin-right: 10px;
+    }
+    
+    .itensdocarrinho{
+        margin: 60px;
+    
+    }
+    
+    .voucherscontainer{
+        margin: 50px;
+    }
+
+    .voucherscontainer h3{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .totalcar{
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        height: 260px;
+        background-color: #F7F7F7;
+    }
+
+    input[id="submitcarrinho"]{
+        width: 180px;
+        height: 70px;
+    }
+    
+    .submitcar input{
+        margin-top: 65px;
+    }
+    
+    .totalcar h5{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        
+    }
+    
+    .cupomtext{
+        width: 100px;
+        height: 40px;
+        background-color: #FFFF;
+        margin-right: 20px;
+        text-align: center;
+        box-shadow: 1px 1px 1px 1px #c4c4c4;
+    }
+    
+    .fretetitle{
+        width: 100px;
+        height: 40px;
+        background-color: #ffff;
+        margin-right: 20px;
+        text-align: center;
+        box-shadow: 1px 1px 1px 1px #c4c4c4;
+    }
+    
+    input[id="fretebutton"]{
+        width: 100px;
+        height: 40px;
+    }
+    
+    input[id="aplicarbutton"]{
+        width: 100px;
+        height: 40px;
+    }
+    
 }
