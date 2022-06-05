@@ -1098,7 +1098,7 @@ input[id="aplicarbutton"]{
   .carrinhoresponsive{
       font-size: 0;
   }
-  
+
 
                   /* FIM DA PAGINA DE CONTATO */
 
@@ -1108,6 +1108,9 @@ input[id="aplicarbutton"]{
 
 @media only screen and (max-width: 1366px){
 
+    body {
+        overflow-x: hidden;
+    }
 
     #search{
         display: none;
@@ -1139,10 +1142,6 @@ input[id="aplicarbutton"]{
         width: 100%;
     }
 
-    body {
-        overflow-x: hidden;
-      }
-    
       .carrinhofuncao{
           display: none;
       }
@@ -1239,6 +1238,7 @@ input[id="aplicarbutton"]{
         height: 70px;
         margin-top: 40px;
     }
+
 }
 
 @media only screen and (max-width: 669px){
@@ -1325,6 +1325,3 @@ input[id="aplicarbutton"]{
         }
 }
 }
-
-
-
