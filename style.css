@@ -1066,6 +1066,10 @@ input[id="aplicarbutton"]{
       font-size: 0;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
 
                   /* FIM DA PAGINA DE CONTATO */
 
@@ -1190,6 +1194,11 @@ input[id="aplicarbutton"]{
         height: calc(100vh - 80px);
     }
 
+    body {
+        overflow-x: hidden;
+      }
+    
+
 @media only screen and (max-width: 900px){
     .about img{
         width: 100%;
@@ -1206,6 +1215,11 @@ input[id="aplicarbutton"]{
         margin-top: 40px;
     }
 
+    body {
+        overflow-x: hidden;
+      }
+    
+
 }
 
 @media only screen and (max-width: 669px){
@@ -1218,6 +1232,11 @@ input[id="aplicarbutton"]{
     .about{
         height: calc(80vh - 80px);
     }
+
+    body {
+        overflow-x: hidden;
+      }
+    
 }
 
         /* FIM RESPOSIVIDADE PAGINA SOBRE */
@@ -1227,6 +1246,11 @@ input[id="aplicarbutton"]{
     .twoproducts img{
         width: 1000px;
     }
+
+    body {
+        overflow-x: hidden;
+      }
+    
 }
 
         /* RESPOSIVIDADE PAGINA CONTATO */
@@ -1238,6 +1262,11 @@ input[id="aplicarbutton"]{
     .contactbox{
         width: 900px;
     }
+
+    body {
+        overflow-x: hidden;
+      }
+    
 }
 
 @media only screen and (max-width: 920px){
@@ -1249,6 +1278,11 @@ input[id="aplicarbutton"]{
         width: 800px;
     }
 
+    body {
+        overflow-x: hidden;
+      }
+    
+
 
 @media only screen and (max-width: 820px){
     .perguntas{
@@ -1258,6 +1292,11 @@ input[id="aplicarbutton"]{
     .contactbox{
         width: 600px;
     }
+
+    body {
+        overflow-x: hidden;
+      }
+    
 }
 
 @media only screen and (max-width: 620px){
@@ -1284,6 +1323,11 @@ input[id="aplicarbutton"]{
         text-align: center;
     }
 
+    body {
+        overflow-x: hidden;
+      }
+    
+
 }
 
 
@@ -1295,8 +1339,10 @@ input[id="aplicarbutton"]{
             width: 20px;
             height: 20px;
         }
-}
-}
+
+        body {
+            overflow-x: hidden;
+          }
 }
 
 @media only screen and (max-width: 999px){
@@ -1442,5 +1488,9 @@ input[id="aplicarbutton"]{
         width: 100px;
         height: 40px;
     }
-    
+
+    body {
+        overflow-x: hidden;
+      }
+    }
 }
