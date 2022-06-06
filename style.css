@@ -1070,6 +1070,11 @@ input[id="aplicarbutton"]{
     overflow-x: hidden;
   }
 
+  html, body {
+    position:relative;
+    overflow-x:hidden;
+  }
+
 
                   /* FIM DA PAGINA DE CONTATO */
 
