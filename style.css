@@ -1066,10 +1066,6 @@ input[id="aplicarbutton"]{
       font-size: 0;
   }
 
-  body {
-    overflow-x: hidden;
-  }
-
   html, body {
     position:relative;
     overflow-x:hidden;
@@ -1084,9 +1080,10 @@ input[id="aplicarbutton"]{
 
 @media only screen and (max-width: 1366px){
 
-    body {
-        overflow-x: hidden;
-    }
+    html, body {
+        position:relative;
+        overflow-x:hidden;
+      }
 
     #search{
         display: none;
@@ -1199,9 +1196,6 @@ input[id="aplicarbutton"]{
         height: calc(100vh - 80px);
     }
 
-    body {
-        overflow-x: hidden;
-      }
     
 
 @media only screen and (max-width: 900px){
@@ -1220,9 +1214,6 @@ input[id="aplicarbutton"]{
         margin-top: 40px;
     }
 
-    body {
-        overflow-x: hidden;
-      }
     
 
 }
@@ -1238,9 +1229,6 @@ input[id="aplicarbutton"]{
         height: calc(80vh - 80px);
     }
 
-    body {
-        overflow-x: hidden;
-      }
     
 }
 
@@ -1252,9 +1240,6 @@ input[id="aplicarbutton"]{
         width: 1000px;
     }
 
-    body {
-        overflow-x: hidden;
-      }
     
 }
 
@@ -1268,9 +1253,6 @@ input[id="aplicarbutton"]{
         width: 900px;
     }
 
-    body {
-        overflow-x: hidden;
-      }
     
 }
 
@@ -1283,10 +1265,6 @@ input[id="aplicarbutton"]{
         width: 800px;
     }
 
-    body {
-        overflow-x: hidden;
-      }
-    
 
 
 @media only screen and (max-width: 820px){
@@ -1298,9 +1276,6 @@ input[id="aplicarbutton"]{
         width: 600px;
     }
 
-    body {
-        overflow-x: hidden;
-      }
     
 }
 
@@ -1328,9 +1303,6 @@ input[id="aplicarbutton"]{
         text-align: center;
     }
 
-    body {
-        overflow-x: hidden;
-      }
     
 
 }
@@ -1345,9 +1317,6 @@ input[id="aplicarbutton"]{
             height: 20px;
         }
 
-        body {
-            overflow-x: hidden;
-          }
 }
 
 @media only screen and (max-width: 999px){
@@ -1493,10 +1462,6 @@ input[id="aplicarbutton"]{
         width: 100px;
         height: 40px;
     }
-
-    body {
-        overflow-x: hidden;
-      }
-    }
+}
 }
 }
