@@ -680,6 +680,10 @@ input[type="password"], input[id="inputs"]{
 
 }
 
+.maincarrinho{
+    height: 15 0vh;
+}
+
 .voucherscontainer{
     margin: 100px;
 }
@@ -735,7 +739,7 @@ input[id="aplicarbutton"]{
     display: flex;
     flex-direction: row;
     margin: 60px;
-    height: 800px;
+    height: calc(120vh - 80px);
 }
 
 .containerproductss{
@@ -1075,6 +1079,16 @@ input[id="aplicarbutton"]{
     font-size: 0;
 }
 
+input[class="fretetitleproducts"]{
+    width: 200px;
+    height: 40px;
+    background-color:  white;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+    margin-right: 10px;
+    text-align: center;
+    
+}
+
 
                   /* FIM DA PAGINA DE CONTATO */
 
@@ -1082,6 +1096,192 @@ input[id="aplicarbutton"]{
 
                   /* RESPONSIVIDADE HEADER */
 
+@media only screen and (max-width: 1375px){
+    .camisetarosali img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .priceproduct{
+        font-size: 15px;
+        margin-top: 200px;
+    }
+
+    .tamanhoswid{
+        margin-right: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 1110px){
+    .camisetarosali{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        margin-left: 500px;
+        margin-top: 200px;
+    }
+
+    .camisetarosali img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .priceproduct{
+        font-size: 15px;
+        margin-top: 200px;
+        margin-left: 60px;
+    }
+
+    .camisetaicon{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tamanhoswid{
+        margin-right: 700px;
+    }
+}
+
+@media only screen and (max-width: 1045px){
+    .camisetarosali{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        margin-left: 500px;
+        margin-top: 200px;
+    }
+
+    .camisetarosali img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .priceproduct{
+        font-size: 10px;
+        margin-top: 200px;
+        margin-left: 60px;
+    }
+
+    .camisetaicon{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tamanhoswid{
+        margin-right: 400px;
+        margin-left: 70px;
+    }
+    .tamanhoswid h2{
+        font-size: 15px;
+    }
+
+    .div11{
+        width: 40px;
+    }
+    .div22{
+        width: 40px;
+    }
+    .div33{
+        width: 40px;
+    }
+    .div44{
+        width: 40px;
+    }
+    .div55{
+        width: 40px;
+    }
+    .div66{
+        width: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 695px){
+    .camisetarosali{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        margin-left: 500px;
+        margin-top: 200px;
+    }
+
+    .camisetarosali img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .priceproduct{
+        font-size: 10px;
+        margin-top: 200px;
+        margin-left: 60px;
+    }
+
+    .camisetaicon{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tamanhoswid{
+        margin-right: 500px;
+        margin-left: 70px;
+    }
+    .tamanhoswid h2{
+        font-size: 15px;
+    }
+
+    .div11{
+        width: 30px;
+    }
+    .div22{
+        width: 30px;
+    }
+    .div33{
+        width: 30px;
+    }
+    .div44{
+        width: 30px;
+    }
+    .div55{
+        width: 30px;
+    }
+    .div66{
+        width: 30px;
+    }
+
+    input[id="fretebuttonproducts"]{
+        font-size: 10px;
+        width: 86px;
+        height: 30px;
+    }
+
+    input[class="fretetitleproducts"]{
+        width: 86px;
+        height: 30px;
+        font-size: 10px;
+        margin-right: 10px;
+        text-align: center;
+        box-shadow: 1px 1px 1px 1px #c4c4c4
+    }
+
+    input[id="caminhoo"]{
+        width: 95px;
+        height: 30px;
+        font-size: 6px;
+        text-align: center;
+    }
+
+    input[id="botton"]{
+        width: 56px;
+        height: 30px;
+        font-size: 8px;
+        text-align: center;
+    }
+
+}
+
+
+                
 @media only screen and (max-width: 1366px){
 
     html, body {
@@ -1764,5 +1964,4 @@ input[id="aplicarbutton"]{
         font-size: 8px;
     }
 }
-
 }
