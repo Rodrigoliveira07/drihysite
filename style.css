@@ -1687,21 +1687,321 @@ input[class="fretetitleproducts"]{
     .responsiveabout{
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
         text-align: center;
         justify-content: center;
-        margin-top: 20px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .responsiveabout h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        margin-top: 20px;
-        font-size: 20px;
+        margin-top: 10px;
+        font-size: 13px;
         font-weight: 500;
     }
 
     
 }
+
+@media only screen and (max-width: 1695px){
+    .divcard{
+        width: 500px;
+        height: 80px;
+    }
+    .divcard2{
+        width: 500px;
+        height: 80px;
+    }
+    .divcard3{
+        width: 500px;
+        height: 80px;
+    }
+
+    .totalcar2{
+        width: 200px;
+    }
+
+    input[id="confirmtotal"]{
+        width: 200px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1480px){
+    .divcard{
+        width: 400px;
+        height: 80px;
+    }
+    .divcard2{
+        width: 400px;
+        height: 80px;
+    }
+    .divcard3{
+        width: 400px;
+        height: 80px;
+    }
+
+    .totalcar2{
+        width: 200px;
+    }
+
+    input[id="confirmtotal"]{
+        width: 200px;
+    }
+
+    .licamiseta{
+        flex-direction: column;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1230px){
+    .divcard{
+        width: 300px;
+        height: 80px;
+    }
+    .divcard2{
+        width: 300px;
+        height: 80px;
+    }
+    .divcard3{
+        width: 300px;
+        height: 80px;
+    }
+
+    .totalcar2{
+        width: 200px;
+    }
+
+    input[id="confirmtotal"]{
+        width: 200px;
+    }
+
+    .licamiseta{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .totalcar2{
+        margin-right: 400px;
+    }
+    
+}
+
+@media only screen and (max-width: 1130px){
+    .divcard{
+        width: 230px;
+        height: 60px;
+        font-size: 10px;
+        margin-right: 50px;
+    }
+
+
+    .divcard2{
+        width: 230px;
+        height: 60px;
+        margin-right: 50px;
+        font-size: 10px;
+    }
+    .divcard3{
+        width: 230px;
+        height: 60px;
+        font-size: 10px;
+        margin-right: 50px;
+    }
+
+    .totalcar2{
+        width: 200px;
+        margin-right: 50px;
+    }
+
+    input[id="confirmtotal"]{
+        width: 200px;
+    }
+
+    .licamiseta img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .licamiseta h5{
+        text-align: center;
+        margin-left: 5px;
+
+    }
+
+    .totalcar2{
+        margin-right: 700px;
+    }
+
+    .containerpagamento{
+        margin: 60px;
+    }
+
+    .pagamentcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .divresponsivul{
+        margin-left: 10px;
+    }
+    
+    .containerpagamento{}
+
+}
+
+@media only screen and (max-width: 1020px){
+    .divcard{
+        width: 230px;
+        height: 60px;
+        font-size: 10px;
+        margin-left: 50px;
+    }
+
+
+    .divcard2{
+        width: 230px;
+        height: 60px;
+        font-size: 10px;
+        margin-left: 50px;
+    }
+    .divcard3{
+        width: 230px;
+        height: 60px;
+        font-size: 10px;
+        margin-left: 50px;
+
+    }
+
+    .totalcar2{
+        width: 200px;
+    }
+
+    input[id="confirmtotal"]{
+        width: 200px;
+    }
+
+    .licamiseta img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .licamiseta h5{
+        text-align: center;
+        margin-left: 0px;
+
+    }
+
+    .totalcar2{
+        margin-right: 900px;
+    }
+
+    .containerpagamento{
+        margin: 60px;
+    }
+
+    .pagamentcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .divresponsivul{
+        margin-left: 10px;
+    }
+    
+    .containerpagamento{
+        display: flex;
+        flex-direction: column;
+        margin-right: 110px;
+    }
+@media only screen and (max-width: 414px){
+        .divcard{
+            width: 130px;
+            height: 60px;
+            font-size: 0px;
+            margin-left: 50px;
+        }
+    
+    
+        .divcard2{
+            width: 130px;
+            height: 60px;
+            font-size: 0px;
+            margin-left: 50px;
+        }
+        .divcard3{
+            width: 130px;
+            height: 60px;
+            font-size: 00px;
+            margin-left: 50px;
+    
+        }
+
+        .totalcar2{
+            width: 200px;
+            height: 300px;
+        }
+    
+        input[id="confirmtotal"]{
+            width: 130px;
+        }
+    
+        .licamiseta img{
+            width: 100px;
+            height: 100px;
+        }
+    
+        .licamiseta h5{
+            text-align: center;
+            margin-left: 0px;
+    
+        }
+    
+        .totalcar2{
+            width: 130px;
+            font-size: 5px;
+        }
+
+        .totalcar2 h5{
+            font-size: 10px;
+        }
+    
+        .containerpagamento{
+            margin: 60px;
+        }
+    
+        .pagamentcontainer{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .divresponsivul{
+            margin-left: 10px;
+        }
+        
+        .containerpagamento{
+            display: flex;
+            flex-direction: column;
+            margin-right: 110px;
+        }
+
+        .setaproslados{
+            width: 73px;
+            height: 30px;
+        }
+
+        .imagesresponsivas{
+            width: 60px;
+            height: 30px;
+        }
+
+}
+
+
 
         /* FIM RESPOSIVIDADE PAGINA SOBRE */
 
@@ -2359,4 +2659,20 @@ input[class="fretetitleproducts"]{
             height: 200px;
         }
     }
+}
+
+@media only screen and (max-width: 414px){
+    
+    .confirmationpage{
+        font-size: 8px;
+        
+    }
+    }
+@media only screen and (max-width: 360px){
+    
+        .confirmationpage{
+            font-size: 5px;
+            
+        }
+        }
 }
