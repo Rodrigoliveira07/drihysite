@@ -2024,6 +2024,59 @@ input[class="fretetitleproducts"]{
     
 }
 
+@media only screen and (max-width: 900px){
+    .window1{
+        width: 300px;
+        height: 200px;
+    }
+    .window2{
+        width: 300px;
+        height: 200px;
+    }
+    .window3{
+        width: 300px;
+        height: 200px;
+    }
+    .window4{
+        width: 300px;
+        height: 200px;
+    }
+
+    @media only screen and (max-width: 900px){
+
+        .mainmy{
+            gap: 10px;
+        }
+
+        .window1{
+            width: 150px;
+            height: 100px;
+            font-size: 10px;
+        }
+        .window2{
+            width: 150px;
+            height: 100px;
+            font-size: 10px;
+            margin-top: 20px;
+        }
+        .window3{
+            width: 150px;
+            height: 100px;
+            font-size: 10px;
+        }
+        .window4{
+            width: 150px;
+            height: 100px;
+            font-size: 10px;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    
+            
+
+
+}
+
 @media only screen and (max-width: 920px){
     .perguntas{
         width: 800px;
