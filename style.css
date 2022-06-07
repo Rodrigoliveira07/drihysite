@@ -2664,15 +2664,25 @@ input[class="fretetitleproducts"]{
 @media only screen and (max-width: 414px){
     
     .confirmationpage{
-        font-size: 8px;
-        
+        font-size: 8px;  
+    }
+    
+    .pedid{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 200px;
+    }
+
+    .camisarosaconfirmation{
+        gap: 1px;
+    }
     }
     }
 @media only screen and (max-width: 360px){
     
         .confirmationpage{
-            font-size: 5px;
+            font-size: 7px;
             
-        }
         }
 }
