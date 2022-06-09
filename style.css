@@ -968,7 +968,7 @@ input[id="aplicarbutton"]{
     display: flex;
     width: 400px;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .window3{
@@ -991,13 +991,49 @@ input[id="aplicarbutton"]{
     display: flex;
     width: 400px;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 10px;
     list-style: circle;
 }
+
+.tittlemyaccount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tittlemyaccount1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+
+.tittlemyaccount2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tittlemyaccount3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
 
 .titleconta{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
     margin-top: 50px;
 }
 
@@ -1088,7 +1124,6 @@ input[class="fretetitleproducts"]{
     text-align: center;
     
 }
-
 
                   /* FIM DA PAGINA DE CONTATO */
 
@@ -2024,27 +2059,25 @@ input[class="fretetitleproducts"]{
     
 }
 
-@media only screen and (max-width: 900px){
-    .window1{
-        width: 300px;
-        height: 200px;
-    }
-    .window2{
-        width: 300px;
-        height: 200px;
-    }
-    .window3{
-        width: 300px;
-        height: 200px;
-    }
-    .window4{
-        width: 300px;
-        height: 200px;
-    }
+
 
     @media only screen and (max-width: 900px){
 
+        .titleconta{
+            font-size: 8px;
+        }
+
+        .containerwindows h4{ 
+            font-size: 8px;
+        }
+
+        
+        .containerwindows2 h4{ 
+            font-size: 8px;
+        }
+
         .mainmy{
+            font-size: 8px;
             gap: 10px;
         }
 
